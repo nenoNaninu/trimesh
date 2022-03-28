@@ -5,7 +5,6 @@ sample.py
 Randomly sample surface and volume of meshes.
 """
 
-from xmlrpc.client import boolean
 import numpy as np
 
 from . import util
@@ -31,7 +30,7 @@ def sample_surface(mesh, count, face_weight=None, sample_color=False):
       Weight faces by a factor other than face area.
       If None will be the same as face_weight=mesh.area
     sample_color : bool
-      Option to calculate the color of the sampled points. 
+      Option to calculate the color of the sampled points.
       Default is False.
     Returns
     ---------
